@@ -1,0 +1,406 @@
+:root{
+    --anek: 'Anek Tamil', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--anek);
+}
+.mainPath{
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 10px;
+}
+header nav img{
+    width: 300px;
+
+    padding: 5px 5px;
+}
+header nav ul{
+    flex: 1;
+    text-align: right;
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #4fc4f7;
+}
+header nav ul li:before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 20px;
+    border-top: 3px solid #4fc4f7;
+    border-left: 3px solid #4fc4f7;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+header nav ul li:after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 20px;
+    border-right: 3px solid #e01a4f;
+    border-bottom: 3px solid #e01a4f;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+header nav ul li:hover:before{
+    left: -10px;
+    top: -10px;
+    opacity: 1;
+}
+header nav ul li:hover:after{
+    right: -10px;
+    bottom: -10px;
+    opacity: 1;
+}
+.btnSignIn{
+    font-weight: 600;
+    text-decoration: none;
+    color: #e01a4f;
+    border: 3px solid;
+    padding: 6px 16px;
+    border-radius: 30px;
+
+}
+.btnSignIn:hover{
+    background-color: rgba(254,230,48,1);
+
+}
+.a:hover{
+    color: #000;
+}
+
+.button-About{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid;
+    padding: 6px 16px;
+    border-radius: 50px;
+    position: absolute;
+}
+/*About The Product Section*/
+.aboutTheProductPath{
+    background-color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.aboutTheProductPath h2{
+    padding-top: 150px;
+    text-align: center;
+    letter-spacing: 0.45em;
+    font-weight: 600;
+    font-size: 50px;
+    color: #f15946;
+}
+/**/
+.aboutTheTeamPath{
+    background-color: #cee4f5;
+    text-align: center;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.aboutTheTeamPath h2{
+    padding-top: 150px;
+    text-align: center;
+    letter-spacing: 0.45em;
+    font-weight: 600;
+    font-size: 50px;
+    color: #f15946;
+}
+/*MainPath Section*/
+
+.mainText{
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
+.mainText h1{
+    font-weight: bold;
+}
+span{
+    background: linear-gradient(90deg, #007cf0, #00df98);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: 100%;
+}
+span:before{
+    content: '';
+    animation: animate 20s infinite ;
+}
+.btnSign{
+
+    font-size: 20px;
+    text-decoration: none;
+    color: #e01a4f;
+    border: 3px solid;
+    padding: 6px 16px;
+    border-radius: 50px;
+}
+.btnSign:hover{
+    background-color: rgba(254,230,48,1);
+}
+/*About Section*/
+.aboutPath{
+
+    margin-bottom: 100px;
+
+}
+.aboutPath h2{
+    padding-top: 150px;
+    text-align: center;
+    letter-spacing: 0.45em;
+    font-weight: 600;
+    font-size: 50px;
+    color: #f15946;
+    background: white;
+}
+.aboutRow{
+    width: 100%;
+    justify-content: center;
+    background: white;
+}
+.colAbout{
+    box-sizing: border-box;
+
+}
+
+.example{
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.example p{
+
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #004988;
+}
+.example img{
+    border-radius: 100px;
+
+    width: 500px;
+    height: 300px;
+}
+/*Services Section*/
+.servicesPath{
+    background-color: #cee4f5;
+    text-align: center;
+}
+.servicesPath h2{
+    padding-top: 200px;
+    letter-spacing: 0.45em;
+    font-weight: 600;
+    font-size: 50px;
+    color: #f15946;
+}
+.servicesPath h3{
+    color: #e01a4f;
+}
+.servicesPath p{
+    color: #004988;
+}
+.servicesRow{
+    display: flex;
+    justify-content: space-around;
+}
+.servicesCol{
+    box-sizing: border-box;
+    flex-basis: 30%;
+}
+.servicesSpace{
+    padding-bottom: 200px;
+}
+.servicesSpace2{
+    padding-bottom: 150px;
+}
+/*Footer Section*/
+.footerPath{
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.footerPath img{
+    width: 50px;
+    padding: 0 5px 0 20px;
+}
+
+.footerRow{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerCol{
+    flex-basis: 15%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    margin-bottom: 1%;
+    background: #1f1f1f;
+}
+
+.footerCol h2{
+    font-size: 25px;
+}
+
+.footerCol li{
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.footerCol a{
+    color: #fff;
+    text-decoration: #ffffff;
+}
+
+
+
+@media (max-width: 700px) {
+    header nav ul{
+        position: absolute;
+        background: #5da6a6;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    header nav ul li {
+        display: block;
+    }
+    .mainText{
+
+    }
+    .btnSign{
+
+    }
+    .example{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .example p{
+        margin: 0;
+
+    }
+    .example img{
+        margin: 50px;
+        width: 300px;
+        height: 200px;
+    }
+    .fixed{
+        padding: 0 0 0 0;
+    }
+    .fixed p{
+        padding: 0 0 0 0 ;
+    }
+    .fixed img{
+        margin: 50px;
+    }
+    .testimonialRow{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonialCol{
+        width: 50%;
+        margin-top: 100px;
+    }
+    .servicesPath{
+        align-items: center;
+    }
+    .servicesPath h2{
+        padding-top: 190px;
+    }
+    .servicesRow{
+        align-items: center;
+        display: block;
+
+    }
+    .activitySpace{
+        padding-bottom: 10px;
+    }
+    .servicesSpace2{
+        padding-bottom: 50px;
+    }
+    .testimonialPath h2{
+        letter-spacing: 0.15em;
+    }
+    .testimonialCol img{
+        width: 190px;
+        height: 200px;
+    }
+    .servicesCol{
+        padding-top: 100px;
+    }
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        content: 'dogs';
+    }
+    35% {
+        content: 'cats';
+    }
+    60% {
+        content: 'animals';
+    }
+    75% {
+        content: 'them';
+    }
+    100% {
+        content: 'us';
+    }
+
+}
